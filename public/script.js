@@ -6,8 +6,8 @@ const myPeer = new Peer(undefined, {
 host: 'remo2021.herokuapp.com', 
 port: 9000,
 
-  // host:''
-  // path: '/',
+  // host:'localhost',
+  path: '/aa',
   // port: '443',
   // secure: true,
   // proxied: true
