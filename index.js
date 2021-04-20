@@ -9,7 +9,7 @@ app.set('view engine', 'ejs')
 app.use(express.static('public'))
 
 app.get('/', (req, res) => {
-  res.redirect(`/${uuidV4()}`)
+  res.redirect(`/aa`)
 })
 
 app.get('/:room', (req, res) => {
@@ -18,8 +18,9 @@ app.get('/:room', (req, res) => {
 
 io.on('connection', socket => {
   socket.on('join-room', (roomId, userId) => {
-    socket.join(roomId)
-    socket.nsp.to(roomId).emit('user-connected', userId)
+
+    socket.join('44')
+    socket.nsp.to('44').emit('user-connected', userId)
 
     socket.on('disconnect', () => {
       socket.broadcast.emit('user-disconnected', userId)
