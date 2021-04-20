@@ -4,6 +4,7 @@ const myPeer = new Peer(undefined, {
 port: '443',
 secure: true,
 ssl: {},
+debug: true,
 proxied: true
 })
 const myVideo = document.createElement('video')
