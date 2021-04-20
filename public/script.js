@@ -3,9 +3,9 @@ const videoGrid = document.getElementById('video-grid')
 const myPeer = new Peer(undefined, {
   
   path: '/',
-  port: '443',
-  secure: true,
-  proxied: true
+  port: '3001',
+  // secure: true,
+  // proxied: true
 })
 const myVideo = document.createElement('video')
 myVideo.muted = true
