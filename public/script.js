@@ -4,7 +4,8 @@ const myPeer = new Peer(undefined, {
   host:'https://remo2021.herokuapp.com',
   path: '/',
   port: '443',
-  secure: true
+  secure: true,
+  proxied: true
 })
 const myVideo = document.createElement('video')
 myVideo.muted = true
