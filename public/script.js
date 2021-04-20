@@ -9,7 +9,7 @@ port: 9000,
   // host:'localhost',
   path: '/aa',
   // port: '443',
-  // secure: true,
+  secure: true,
   // proxied: true
 })
 const myVideo = document.createElement('video')
