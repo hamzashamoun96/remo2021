@@ -5,8 +5,13 @@ const myPeer = new Peer(undefined, {
   debug: true,
   port: '443',
 secure: true,
+config: {'iceServers': [
+  { url: 'stun:stun.l.google.com:19302' },
+  { url: 'turn:homeo@turn.bistri.com:80', credential: 'homeo' }
+]},
 ssl: {},
 })
+
 const myVideo = document.createElement('video')
 myVideo.muted = true
 const peers = {}
