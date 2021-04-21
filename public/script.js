@@ -5,13 +5,6 @@ const myPeer = new Peer(undefined, {
   debug: true,
   port: '443',
 secure: true,
-iceServers: [
-  {
-    urls: "turn:turnserver.example.org",
-    username: "webrtc",
-    credential: "turnpassword"
-  }
-],
 ssl: {},
 })
 
