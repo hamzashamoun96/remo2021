@@ -5,10 +5,13 @@ const myPeer = new Peer(undefined, {
   debug: true,
   port: '443',
 secure: true,
-config: {'iceServers': [
-  { url: 'stun:stun.l.google.com:19302' },
-  { url: 'turn:homeo@turn.bistri.com:443', credential: 'homeo' }
-]},
+iceServers: [
+  {
+    urls: "turn:turnserver.example.org",
+    username: "webrtc",
+    credential: "turnpassword"
+  }
+],
 ssl: {},
 })
 
