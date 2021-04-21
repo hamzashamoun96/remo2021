@@ -1,7 +1,7 @@
 const socket = io('https://remo2021.herokuapp.com/')
 const videoGrid = document.getElementById('video-grid')
 const myPeer = new Peer(undefined, {
-port: '443',
+port: '90',
 secure: true,
 })
 
