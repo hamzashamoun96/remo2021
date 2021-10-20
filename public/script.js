@@ -1,4 +1,4 @@
-const socket = io('https://remo2021.herokuapp.com/')
+const socket = io('https://video-char-mdrob.herokuapp.com/')
 const videoGrid = document.getElementById('video-grid')
 const myPeer = new Peer(undefined, {
 port: '443',
